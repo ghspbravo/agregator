@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Агрегатор</title>
+	<link rel="stylesheet" href="vendor/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="styles.min.css">
+</head>
+<body>
+	
+	<header>
+		<nav class="container">
+			<div class="row no-gutters align-items-center justify-content-between navigation">
+				<a href="/" class="navigation-item active">
+					<span>Главная</span>
+				</a>
+				<a href="#" class="navigation-item">
+					<span>Объявления</span>
+				</a>
+				<a href="#" class="navigation-item">
+					<span>О нас</span>
+				</a>
+				<a href="#" class="navigation-item">
+					<span>Блог</span>
+				</a>
+				<a href="#" class="navigation-item">
+					<span>Контакты</span>
+				</a>
+				<a href="#" class="navigation-item">
+					<span>Партнеры</span>
+				</a>
+			</div>
+		</nav>
+	</header>
+
+	<section>
+		<div class="row align-items-center justify-content-center topbanner">
+			<form class="filter row no-gutters" action="search">
+
+				<div class="filter-group">
+					<button type="button" data-for="city" class="filter__control js-control">Город</button>
+					<div id="city" class="filter__options options">
+						<button type="button" data-value="0" class="options-item">Екатеринбург</button>
+						<button type="button" data-value="1" class="options-item">Москва</button>
+						<button type="button" data-value="2" class="options-item">Санкт-Петербург</button>
+					</div>
+				</div>
+
+				<div class="filter-group">
+					<button type="button" data-for="rent" class="filter__control js-control">Аренда</button>
+					<div id="rent" class="filter__options options">
+						<button type="button" data-value="0" class="options-item">Аренда</button>
+						<button type="button" data-value="1" class="options-item">Покупка</button>
+					</div>
+				</div>
+
+				<div class="filter-group">
+					<button type="button" data-for="living" class="filter__control js-control">Жилая</button>
+					<div id="living" class="filter__options options">
+						<button type="button" data-value="0" class="options-item">Квартиры</button>
+						<button type="button" data-value="1" class="options-item">Студии</button>
+						<button type="button" data-value="2" class="options-item">Коттеджи, дома</button>
+					</div>
+				</div>
+
+				<button class="filter__submit">Поиск</button>
+				
+			</form>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<h1 class="section-title">Последние статьи</h1>
+
+			<div class="articles row no-gutters justify-content-between">
+				<div class="articles-item article">
+					<div class="row no-gutters">
+						<div class="article__date"><span>20 Сен</span></div>
+						<div class="article__title"><h2>Название статьи</h2></div>
+					</div>
+					<div class="article__thumb" style="background-image: url(https://images.pexels.com/users/avatars/171478/aleksandr-prokofiev-284.jpeg?w=256&h=256&fit=crop&crop=faces)"></div>
+					<div class="row no-gutters align-items-center article__credits">
+						<div class="article-credits credits_author">Автор</div>
+						<div class="article-credits credits_theme">Тема</div>
+					</div>
+					<div class="article__excerpt">
+						<p>Повседневная практика показывает, что сложившаяся структура организации позволяет выполнять важные...</p>
+					</div>
+					<div class="article__read-more">
+						<a href="#"><span>Читать дальше</span></a>
+					</div>
+				</div>
+				
+				<div class="articles-item article">
+					<div class="row no-gutters">
+						<div class="article__date"><span>20 Сен</span></div>
+						<div class="article__title"><h2>Название статьи</h2></div>
+					</div>
+					<div class="article__thumb" style="background-image: url(https://images.pexels.com/users/avatars/171478/aleksandr-prokofiev-284.jpeg?w=256&h=256&fit=crop&crop=faces)"></div>
+					<div class="row no-gutters align-items-center article__credits">
+						<div class="article-credits credits_author">Автор</div>
+						<div class="article-credits credits_theme">Тема</div>
+					</div>
+					<div class="article__excerpt">
+						<p>Повседневная практика показывает, что сложившаяся структура организации позволяет выполнять важные...</p>
+					</div>
+					<div class="article__read-more">
+						<a href="#"><span>Читать дальше</span></a>
+					</div>
+				</div>
+
+				<div class="articles-item article">
+					<div class="row no-gutters">
+						<div class="article__date"><span>20 Сен</span></div>
+						<div class="article__title"><h2>Название статьи</h2></div>
+					</div>
+					<div class="article__thumb" style="background-image: url(https://images.pexels.com/users/avatars/171478/aleksandr-prokofiev-284.jpeg?w=256&h=256&fit=crop&crop=faces)"></div>
+					<div class="row no-gutters align-items-center article__credits">
+						<div class="article-credits credits_author">Автор</div>
+						<div class="article-credits credits_theme">Тема</div>
+					</div>
+					<div class="article__excerpt">
+						<p>Повседневная практика показывает, что сложившаяся структура организации позволяет выполнять важные...</p>
+					</div>
+					<div class="article__read-more">
+						<a href="#"><span>Читать дальше</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+</body>
+<script src="scripts.min.js"></script>
+</html>

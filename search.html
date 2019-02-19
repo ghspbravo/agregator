@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Агрегатор - результаты</title>
+	<link rel="stylesheet" href="vendor/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="styles.min.css">
+</head>
+<body>
+
+	<header>
+		<nav class="container">
+			<div class="row no-gutters align-items-center justify-content-between navigation">
+				<a href="/" class="navigation-item active">
+					<span>Главная</span>
+				</a>
+				<a href="#" class="navigation-item">
+					<span>Объявления</span>
+				</a>
+				<a href="#" class="navigation-item">
+					<span>О нас</span>
+				</a>
+				<a href="#" class="navigation-item">
+					<span>Блог</span>
+				</a>
+				<a href="#" class="navigation-item">
+					<span>Контакты</span>
+				</a>
+				<a href="#" class="navigation-item">
+					<span>Партнеры</span>
+				</a>
+			</div>
+		</nav>
+	</header>
+		
+	<div class="wrapper">
+		<section>
+			<div class="container">
+				<h1 class="section-title">Результаты</h1>
+
+				<form class="filter filter-results row no-gutters" action="search">
+
+					<div class="filter-group">
+						<button type="button" data-for="city" class="filter__control js-control">Город</button>
+						<div id="city" class="filter__options options">
+							<button type="button" data-value="0" class="options-item">Екатеринбург</button>
+							<button type="button" data-value="1" class="options-item">Москва</button>
+							<button type="button" data-value="2" class="options-item">Санкт-Петербург</button>
+						</div>
+					</div>
+	
+					<div class="filter-group">
+						<button type="button" data-for="rent" class="filter__control js-control">Аренда</button>
+						<div id="rent" class="filter__options options">
+							<button type="button" data-value="0" class="options-item">Аренда</button>
+							<button type="button" data-value="1" class="options-item">Покупка</button>
+						</div>
+					</div>
+	
+					<div class="filter-group">
+						<button type="button" data-for="living" class="filter__control js-control">Жилая</button>
+						<div id="living" class="filter__options options">
+							<button type="button" data-value="0" class="options-item">Квартиры</button>
+							<button type="button" data-value="1" class="options-item">Студии</button>
+							<button type="button" data-value="2" class="options-item">Коттеджи, дома</button>
+						</div>
+					</div>
+
+					<div class="filter-group">
+						<button type="button" data-for="area" class="filter__control js-control">Район</button>
+						<div id="area" class="filter__options options">
+							<button type="button" data-value="0" class="options-item">Екатеринбург</button>
+							<button type="button" data-value="1" class="options-item">Москва</button>
+							<button type="button" data-value="2" class="options-item">Санкт-Петербург</button>
+						</div>
+					</div>
+	
+					<div class="filter-group">
+						<button type="button" data-for="room-count" class="filter__control js-control">Количество комнат</button>
+						<div id="room-count" class="filter__options options">
+							<button type="button" data-value="0" class="options-item">Аренда</button>
+							<button type="button" data-value="1" class="options-item">Покупка</button>
+						</div>
+					</div>
+	
+					<div class="filter-group">
+						<button type="button" data-for="room-type" class="filter__control js-control">Тип квартиры</button>
+						<div id="room-type" class="filter__options options">
+							<button type="button" data-value="0" class="options-item">Квартиры</button>
+							<button type="button" data-value="1" class="options-item">Студии</button>
+							<button type="button" data-value="2" class="options-item">Коттеджи, дома</button>
+						</div>
+					</div>
+
+					<div class="filter-group">
+						<button type="button" data-for="big-area" class="filter__control js-control">Крупная площадь</button>
+						<div id="big-area" class="filter__options options">
+							<button type="button" data-value="0" class="options-item">Екатеринбург</button>
+							<button type="button" data-value="1" class="options-item">Москва</button>
+							<button type="button" data-value="2" class="options-item">Санкт-Петербург</button>
+						</div>
+					</div>
+	
+					<div class="filter-group filter-group_s">
+						<button type="button" data-for="floor" class="filter__control js-control">Этаж</button>
+						<div id="floor" class="filter__options options">
+							<button type="button" data-value="0" class="options-item">Аренда</button>
+							<button type="button" data-value="1" class="options-item">Покупка</button>
+						</div>
+					</div>
+	
+					<div class="filter-group">
+						<button type="button" data-for="material" class="filter__control js-control">Материал дома</button>
+						<div id="material" class="filter__options options">
+							<button type="button" data-value="0" class="options-item">Квартиры</button>
+							<button type="button" data-value="1" class="options-item">Студии</button>
+							<button type="button" data-value="2" class="options-item">Коттеджи, дома</button>
+						</div>
+					</div>
+
+					<div class="filter-group">
+						<button type="button" data-for="bath" class="filter__control js-control">Санузел</button>
+						<div id="bath" class="filter__options options">
+							<button type="button" data-value="0" class="options-item">Екатеринбург</button>
+							<button type="button" data-value="1" class="options-item">Москва</button>
+							<button type="button" data-value="2" class="options-item">Санкт-Петербург</button>
+						</div>
+					</div>
+	
+					<div class="filter-group">
+						<button type="button" data-for="planing" class="filter__control js-control">Планировка</button>
+						<div id="planing" class="filter__options options">
+							<button type="button" data-value="0" class="options-item">Аренда</button>
+							<button type="button" data-value="1" class="options-item">Покупка</button>
+						</div>
+					</div>
+	
+					<div class="filter-group">
+						<button type="button" data-for="living-area" class="filter__control js-control">Жилая площадь</button>
+						<div id="living-area" class="filter__options options">
+							<button type="button" data-value="0" class="options-item">Квартиры</button>
+							<button type="button" data-value="1" class="options-item">Студии</button>
+							<button type="button" data-value="2" class="options-item">Коттеджи, дома</button>
+						</div>
+					</div>
+
+					<div class="filter-group filter-group_s">
+						<button type="button" data-for="balcony" class="filter__control js-control">Балкон</button>
+						<div id="balcony" class="filter__options options">
+							<button type="button" data-value="0" class="options-item">Екатеринбург</button>
+							<button type="button" data-value="1" class="options-item">Москва</button>
+							<button type="button" data-value="2" class="options-item">Санкт-Петербург</button>
+						</div>
+					</div>
+	
+					<div class="filter-group">
+						<button type="button" data-for="street" class="filter__control js-control">Улица, дом</button>
+						<div id="street" class="filter__options options">
+							<button type="button" data-value="0" class="options-item">Аренда</button>
+							<button type="button" data-value="1" class="options-item">Покупка</button>
+						</div>
+					</div>
+	
+					<div class="filter-group">
+						<button type="button" data-for="all-area" class="filter__control js-control">Общая площадь</button>
+						<div id="all-area" class="filter__options options">
+							<button type="button" data-value="0" class="options-item">Квартиры</button>
+							<button type="button" data-value="1" class="options-item">Студии</button>
+							<button type="button" data-value="2" class="options-item">Коттеджи, дома</button>
+						</div>
+					</div>
+	
+					<button class="filter__submit">Поиск</button>
+					
+				</form>
+
+				<div class="results">
+					<table>
+						<tbody>
+							<tr class="tbhead">
+								<th class="td_l">Цена</th>
+								<th class="td_s">Тип</th>
+								<th class="td_s">Фото</th>
+								<th class="td_m">Площадь</th>
+								<th class="td_s">Этаж</th>
+								<th class="td_l">Адрес</th>
+								<th class="td_l">Район</th>
+								<th class="td_l">Город</th>
+								<th class="td_m">Дата</th>
+							</tr>
+							<tr>
+								<td class="td_l">20 000 000 руб</td>
+								<td class="td_s">2</td>
+								<td class="td_s"><img class="results-thumb" src="https://www.holidayhomesindenmark.com/uploads/1278/house/1356-12-full.jpg" alt="thumb"></td>
+								<td class="td_m">47/45/55</td>
+								<td class="td_s">2</td>
+								<td class="td_l">Толмачева 12</td>
+								<td class="td_l">Чкаловский</td>
+								<td class="td_l">Екатеринбург</td>
+								<td class="td_m">15.12.2018</td>
+							</tr>
+							
+							<tr>
+								<td class="td_l">20 000 000 руб</td>
+								<td class="td_s">2</td>
+								<td class="td_s"><img class="results-thumb" src="https://www.holidayhomesindenmark.com/uploads/1278/house/1356-12-full.jpg" alt="thumb"></td>
+								<td class="td_m">47/45/55</td>
+								<td class="td_s">2</td>
+								<td class="td_l">Толмачева 12</td>
+								<td class="td_l">Чкаловский</td>
+								<td class="td_l">Екатеринбург</td>
+								<td class="td_m">15.12.2018</td>
+							</tr>
+
+							<tr>
+								<td class="td_l">20 000 000 руб</td>
+								<td class="td_s">2</td>
+								<td class="td_s"><img class="results-thumb" src="https://www.holidayhomesindenmark.com/uploads/1278/house/1356-12-full.jpg" alt="thumb"></td>
+								<td class="td_m">47/45/55</td>
+								<td class="td_s">2</td>
+								<td class="td_l">Толмачева 12</td>
+								<td class="td_l">Чкаловский</td>
+								<td class="td_l">Екатеринбург</td>
+								<td class="td_m">15.12.2018</td>
+							</tr>
+
+							<tr>
+								<td class="td_l">20 000 000 руб</td>
+								<td class="td_s">2</td>
+								<td class="td_s"><img class="results-thumb" src="https://www.holidayhomesindenmark.com/uploads/1278/house/1356-12-full.jpg" alt="thumb"></td>
+								<td class="td_m">47/45/55</td>
+								<td class="td_s">2</td>
+								<td class="td_l">Толмачева 12</td>
+								<td class="td_l">Чкаловский</td>
+								<td class="td_l">Екатеринбург</td>
+								<td class="td_m">15.12.2018</td>
+							</tr>
+
+							<tr>
+								<td class="td_l">20 000 000 руб</td>
+								<td class="td_s">2</td>
+								<td class="td_s"><img class="results-thumb" src="https://www.holidayhomesindenmark.com/uploads/1278/house/1356-12-full.jpg" alt="thumb"></td>
+								<td class="td_m">47/45/55</td>
+								<td class="td_s">2</td>
+								<td class="td_l">Толмачева 12</td>
+								<td class="td_l">Чкаловский</td>
+								<td class="td_l">Екатеринбург</td>
+								<td class="td_m">15.12.2018</td>
+							</tr>
+
+							<tr>
+								<td class="td_l">20 000 000 руб</td>
+								<td class="td_s">2</td>
+								<td class="td_s"><img class="results-thumb" src="https://www.holidayhomesindenmark.com/uploads/1278/house/1356-12-full.jpg" alt="thumb"></td>
+								<td class="td_m">47/45/55</td>
+								<td class="td_s">2</td>
+								<td class="td_l">Толмачева 12</td>
+								<td class="td_l">Чкаловский</td>
+								<td class="td_l">Екатеринбург</td>
+								<td class="td_m">15.12.2018</td>
+							</tr>
+
+							<tr>
+								<td class="td_l">20 000 000 руб</td>
+								<td class="td_s">2</td>
+								<td class="td_s"><img class="results-thumb" src="https://www.holidayhomesindenmark.com/uploads/1278/house/1356-12-full.jpg" alt="thumb"></td>
+								<td class="td_m">47/45/55</td>
+								<td class="td_s">2</td>
+								<td class="td_l">Толмачева 12</td>
+								<td class="td_l">Чкаловский</td>
+								<td class="td_l">Екатеринбург</td>
+								<td class="td_m">15.12.2018</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="row justify-content-center">
+						<button class="results-more">Показать больше</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<h1 class="section-title">Последние статьи</h1>
+	
+				<div class="articles row no-gutters justify-content-between">
+					<div class="articles-item article">
+						<div class="row no-gutters">
+							<div class="article__date"><span>20 Сен</span></div>
+							<div class="article__title"><h2>Название статьи</h2></div>
+						</div>
+						<div class="article__thumb" style="background-image: url(https://images.pexels.com/users/avatars/171478/aleksandr-prokofiev-284.jpeg?w=256&h=256&fit=crop&crop=faces)"></div>
+						<div class="row no-gutters align-items-center article__credits">
+							<div class="article-credits credits_author">Автор</div>
+							<div class="article-credits credits_theme">Тема</div>
+						</div>
+						<div class="article__excerpt">
+							<p>Повседневная практика показывает, что сложившаяся структура организации позволяет выполнять важные...</p>
+						</div>
+						<div class="article__read-more">
+							<a href="#"><span>Читать дальше</span></a>
+						</div>
+					</div>
+					
+					<div class="articles-item article">
+						<div class="row no-gutters">
+							<div class="article__date"><span>20 Сен</span></div>
+							<div class="article__title"><h2>Название статьи</h2></div>
+						</div>
+						<div class="article__thumb" style="background-image: url(https://images.pexels.com/users/avatars/171478/aleksandr-prokofiev-284.jpeg?w=256&h=256&fit=crop&crop=faces)"></div>
+						<div class="row no-gutters align-items-center article__credits">
+							<div class="article-credits credits_author">Автор</div>
+							<div class="article-credits credits_theme">Тема</div>
+						</div>
+						<div class="article__excerpt">
+							<p>Повседневная практика показывает, что сложившаяся структура организации позволяет выполнять важные...</p>
+						</div>
+						<div class="article__read-more">
+							<a href="#"><span>Читать дальше</span></a>
+						</div>
+					</div>
+	
+					<div class="articles-item article">
+						<div class="row no-gutters">
+							<div class="article__date"><span>20 Сен</span></div>
+							<div class="article__title"><h2>Название статьи</h2></div>
+						</div>
+						<div class="article__thumb" style="background-image: url(https://images.pexels.com/users/avatars/171478/aleksandr-prokofiev-284.jpeg?w=256&h=256&fit=crop&crop=faces)"></div>
+						<div class="row no-gutters align-items-center article__credits">
+							<div class="article-credits credits_author">Автор</div>
+							<div class="article-credits credits_theme">Тема</div>
+						</div>
+						<div class="article__excerpt">
+							<p>Повседневная практика показывает, что сложившаяся структура организации позволяет выполнять важные...</p>
+						</div>
+						<div class="article__read-more">
+							<a href="#"><span>Читать дальше</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+</body>
+<script src="scripts.min.js"></script>
+</html>

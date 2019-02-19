@@ -1,0 +1,43 @@
+header {
+	width: 100%;
+	height: @header-height;
+	position: fixed;
+	top: 0; left: 0;
+	background-color: @c-dark;
+	z-index: 5;
+}
+
+.navigation {
+	height: @header-height;
+	max-width: 600px;
+	width: 100%;
+
+	&-item {
+		position: relative;
+		color: white;
+		font-size: 16px;
+		opacity: 0.9;
+		&:hover, :focus {
+			color: @c-hover;
+		}
+		span {
+			border-bottom: none;
+		}
+		
+		&.active {
+			color: @c-primary;
+			opacity: 1;
+			&:after {
+				content: '';
+				position: absolute;
+				width: 30px; height: 20px;
+				bottom: -23px;
+				left: 50%;
+				transform: translateX(-50%);
+				background-image: url(/assets/nav-current.svg);
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+		}
+	}
+}
